@@ -117,7 +117,15 @@ main {
     font-size: 1rem;
 }
 
+.bg-desktop {
+    display: none;
+}
+
 @midia(min-width: 1000px) {
+    body {
+        display: flex;
+    }
+
     header {
         backgroud: none;
         justify-content: flex-start;
@@ -130,6 +138,15 @@ main {
 
     main {
         padding-inline: 7rem;
+    }
+
+    .conteudo {
+        width: 100%;
+    }
+
+    .bg-desktop {
+        display: block;
+        width: 100%;
     }
 }
 
